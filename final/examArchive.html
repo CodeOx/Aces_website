@@ -1,0 +1,42 @@
+{{ extend 'final/layout.html' }}
+
+<div class="container">
+	<div class="heading">
+		<h1 > List of Past Year Question Papers </h1>
+		<hr>	
+	</div>
+	<div class="questionList">
+		<div class = "papersList">
+			<table class="table  table-hover table-bordered">
+				{{for f in files[0:]:}}
+				<tr>
+					<td style ="text-align:left">
+						<a href = "{{= f + '/'}}" >		
+							  {{= f[0:6]+": "+f[6:].replace("_"," ")}}
+						</a>
+					</td>
+				</tr>
+				{{pass}}
+			</table>
+		</div>
+
+	</div>
+
+	<div class="donate">
+	<h1> Donate to our Question Paper Database </h1>
+	{{=form}}
+	<h3>{{=statusform}}</h3>
+	</div>
+
+	
+	
+	<div class="clear">
+		<hr>
+	</div>
+</data>
+
+
+
+
+
+

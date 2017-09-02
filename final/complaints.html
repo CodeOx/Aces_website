@@ -1,0 +1,52 @@
+{{ extend 'final/layout.html' }}
+<style>
+table {
+color: #333; /* Lighten up font color */
+font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+width: 1400px;
+border-collapse:
+collapse; border-spacing: 0;
+align:center;
+}
+
+td, th { border: 1px solid #CCC; height: 30px; } /* Make cells a bit taller */
+
+th {
+background: #F3F3F3; /* Light grey background */
+font-weight: bold; /* Make sure they're bold */
+}
+
+td {
+background: #FAFAFA; /* Lighter grey background */
+text-align: center; /* Center our text */
+}
+
+</style>
+<br>
+<h1 align='center'> Submitted Complaints</h2>
+<br>
+{{import csv}}
+{{with open('/home/attic/web2py/applications/acesacm/complaints.csv', 'rb') as csvfile:}}
+{{reader = csv.reader(csvfile, delimiter=' ', quotechar='|')}}
+<table align='center'>
+<tr>
+<td>Subject</td>
+<td>Description</td>
+<td>People Responsible</td>
+<td>Name of Sender</td>
+<td>Entry Number</td>
+
+</tr>
+{{for row in reader:}}
+<tr>
+{{for x in row:}}
+<td>{{=x}}</td>
+{{pass}}
+</tr>
+{{pass}}
+{{pass}}
+
+</table>
+<br>
+<br>
+<br>

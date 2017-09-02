@@ -1,0 +1,104 @@
+
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+  <legend><center><h2>Bot Maker</h2></center></legend>
+  <h3><center>This is a simple guide to deploy our project <a>Campus Bot</a> to any campus.
+  </h3></center>
+  <hr>
+  <br>
+  <br>
+  <center> Firstly you have to create a QnA Maker application at <a href="qnamaker.ai">qnamaker.ai</a>. Create an application and feed it the URL's of your FAQ pages so that the bot can smartly answer user queries. When this is done please paste the knowledge base id and Subscription key below. </center> 
+  <br>
+  
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput1">QnA Knowledge Base Id</label>  
+  <div class="col-md-4">
+  <input id="textinput1" name="textinput1" type="text" placeholder="KB Id" class="form-control input-md">
+    
+  </div>
+</div>
+  <center>Now we will configure LUIS (Language Understanding Intelligent Service) which allows us to understand natural language instructions easily. For this we provide a pre-trained model to you. Just click the button to download it. Next go to <a href="luis.ai">luis.ai</a> and create a new application. Click import model and upload the downloaded file. After this just copy and paste the LUIS App Id and Endpoint Key to this form. </center>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput2">QnA Subscription Key</label>  
+  <div class="col-md-4">
+  <input id="textinput2" name="textinput2" type="text" placeholder="QnA Key" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton">LUIS Data</label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-primary">Download Training Data</button>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput3">LUIS App Id</label>  
+  <div class="col-md-4">
+  <input id="textinput3" name="textinput3" type="text" placeholder="LUIS ID" class="form-control input-md">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput4">LUIS Endpoint Key</label>  
+  <div class="col-md-4">
+  <input id="textinput4" name="textinput4" type="text" placeholder="LUIS Key" class="form-control input-md">
+    
+  </div>
+</div>
+<center> One feature of the bot is to alert it's users of events happening around them. To do this  the bot crawls a given set of Facebook Pages to get the relevant events. Please enter the Page Ids of the pages that you would like your bot to crawl (comma separated).<center>
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">Facebook Page IDs</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="textarea" name="textarea">Comma separated list of Facebook pages to track events from.</textarea>
+  </div>
+</div>
+<center> Finally you have to upload the Student and Course Databases, these databses are to be submitted as csv files and we will convert them into JSON data for use.
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="filebutton1">Student Database (csv)</label>
+  <div class="col-md-4">
+    <input id="filebutton1" name="filebutton1" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="filebutton2">Course Database (csv)</label>
+  <div class="col-md-4">
+    <input id="filebutton2" name="filebutton2" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="singlebutton">Generate Bot</label>
+  <div class="col-md-4">
+    <button id="singlebutton" name="singlebutton" class="btn btn-success">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</body>

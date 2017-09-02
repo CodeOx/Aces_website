@@ -1,0 +1,349 @@
+{{extend 'final/layout.html'}}
+
+
+
+    <!-- START REVOLUTION SLIDER 3.0.95 fullwidth mode -->
+
+
+    <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper" style="margin:0px auto;background-color:#E9E9E9;padding:0px;max-height:600px;">
+        <div id="rev_slider_1_1" class="rev_slider " style="display:none;max-height:600px;">
+            <ul>
+                <li data-transition="random" data-slotamount="7" data-masterspeed="300">
+                    <img src="{{=URL('static','final/wp-content/pictures/home/zerohour.jpg')}}" style='background-color:#2a80b9' alt=""  style="position:absolute;left=0;top:10">
+
+                </li>
+
+                <li data-transition="random" data-slotamount="7" data-masterspeed="300">
+                    <img src="{{=URL('static','final/wp-content/pictures/home/codefundo2016.png')}}" style='background-color:#2a80b9' alt=""  style="position:absolute;left=0;top:10">
+
+                </li>
+                <li data-transition="random" data-slotamount="7" data-masterspeed="300">
+                    <img   src="{{=URL('static','final/wp-content/pictures/home/frosh-welcome.jpg')}}" style='background-color:#d25400' alt=""  style="position:absolute;left=0;top:10">
+                   
+
+                </li>
+                <li data-transition="random" data-slotamount="7" data-masterspeed="300">
+                    <img src="{{=URL('static','final/wp-content/pictures/home/apc.jpg')}}" style='background-color:#46b39e' alt=""  style="position:absolute;left=0;top:10">
+
+                </li>
+                <li data-transition="random" data-slotamount="7" data-masterspeed="300">
+                    <img src="{{=URL('static','final/wp-content/pictures/home/coding-club.jpg')}}" style='background-color:#46b39e' alt=""  style="position:absolute;left=50px;top:10">
+
+                </li>
+                <li data-transition="random" data-slotamount="7" data-masterspeed="300">
+                    <img src="{{=URL('static','final/wp-content/pictures/home/fresher-welcome.jpg')}}" style='background-color:#46b39e' alt="" style="position:absolute;left=0;top:10">
+
+                </li>
+                 <li data-transition="random" data-slotamount="7" data-masterspeed="300">
+                    <img src="{{=URL('static','final/wp-content/pictures/home/fifa.jpg')}}" style='background-color:#46b39e' alt="" style="position:absolute;left=0;top:10">
+
+                </li>
+           </ul>
+            <div class="tp-bannertimer tp-bottom"></div>
+        </div>
+    </div>
+
+
+   
+    <script type="text/javascript">
+
+        var tpj = jQuery;
+
+        tpj.noConflict();
+
+        var revapi1;
+
+        tpj(document).ready(function () {
+
+
+            if (tpj.fn.cssOriginal != undefined)
+                tpj.fn.css = tpj.fn.cssOriginal;
+
+            if (tpj('#rev_slider_1_1').revolution == undefined)
+                revslider_showDoubleJqueryError('#rev_slider_1_1');
+            else
+                revapi1 = tpj('#rev_slider_1_1').show().revolution(
+                 {
+                     delay: 9000,
+                     startwidth: 100,
+                     startheight: 100,
+                     hideThumbs: 200,
+
+                     thumbWidth: 100,
+                     thumbHeight: 50,
+                     thumbAmount: 4,
+
+                     navigationType: "none",
+                     navigationArrows: "solo",
+                     navigationStyle: "square-old",
+
+                     touchenabled: "on",
+                     onHoverStop: "on",
+
+                     navigationHAlign: "center",
+                     navigationVAlign: "bottom",
+                     navigationHOffset: 0,
+                     navigationVOffset: 20,
+
+                     soloArrowLeftHalign: "left",
+                     soloArrowLeftValign: "center",
+                     soloArrowLeftHOffset: 20,
+                     soloArrowLeftVOffset: 0,
+
+                     soloArrowRightHalign: "right",
+                     soloArrowRightValign: "center",
+                     soloArrowRightHOffset: 20,
+                     soloArrowRightVOffset: 0,
+
+                     shadow: 0,
+                     fullWidth: "on",
+                     fullScreen: "off",
+
+                     stopLoop: "off",
+                     stopAfterLoops: -1,
+                     stopAtSlide: -1,
+
+                     shuffle: "off",
+
+                     hideSliderAtLimit: 0,
+                     hideCaptionAtLimit: 0,
+                     hideAllCaptionAtLilmit: 0,
+                     startWithSlide: 0,
+                     videoJsPath: "http://wordpress-themes.derby-web-design-agency.co.uk/wp-content/plugins/revslider/rs-plugin/videojs/",
+                     fullScreenOffsetContainer: ""
+                 });
+        });	//ready
+
+    </script>
+
+    <!-- END REVOLUTION SLIDER -->
+
+<!--
+        <div id="banner">
+
+            <div class="inner_content">
+
+                <div class="welcome_index">
+		<p>The all-new ACES-ACM Newsletter <span class="hue_block black " style="background-color:rgb(0,125,125)">Blackbox</span> is here with a collection of great articles made just for the Computer Science junta!</p>
+                <p>So what are you guys waiting for?! Go <a href="{{=URL('static','final/wp-content/uploads/Newsletters/Nov2014.pdf')}}">read!</a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+-->
+        <div class="container intro_wrapper">
+
+       		<div class="inner_content">
+
+                	<div class="welcome_index">
+                		<p><span class="hue"><a href="tryst.html">Tryst</a></span> is here! We are back with a host of events this season.</p>
+                	</div>
+
+            	</div>
+
+        </div>
+        <div id="banner">
+
+                <div class="inner_content">
+
+                        <div class="welcome_index">
+                                <p>ACES-ACM is the official cultural and technical computer science society of IIT Delhi. We have been actively conducting numerous <span class="hue_block white normal">events</span> year after year to cater to both the <span>programmer</span> and the <span class="hue">gamer</span>!</p>
+                                <p>-ACES-ACM</p>
+                        </div>
+
+                </div>
+
+        </div>
+	
+<div class="pad20"> </div>
+    <div class="container wrapper">
+
+        <div class="inner_content" style="float:left">
+            <div class="row ">
+                <div class="span4">
+                    <h1 ><strong> Recent Events</strong></h1>
+                    <h2>We regularly conduct both technical and recreational events. To see the other recently concluded events <a href="{{=URL('events2014')}}">click here</a></h2>
+                </div>
+                <div class="span8">
+                    <div class="row">
+                        <div class="span8 pad15 col_full2">
+                            <div id="slider_home1">
+                                <div class="slider-item">
+                                    <div class="slider-image">
+                                    
+                                        <a href="frosh.html"><img src="{{=URL('static','final/wp-content/pictures/home/recent/frosh-welcome.jpg')}}" alt="Frosh Welcome" /></a>
+                                        
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="slider-title">
+					<h3><a href="frosh.html">Frosh Welcome</a></h3>
+					<p><a href="frosh.html">Read More</a></h3>
+                                    </div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="slider-image">
+                                        <a href="freshers.html"><img src="{{=URL('static','final/wp-content/pictures/home/recent/fresher-welcome.jpg')}}" alt="Fresher's Welcome" /></a>    
+                                    </div><div class="clear"></div>
+                                    <div class="slider-title">
+                                        <h3><a href="freshers.html">Fresher's Welcome</a></h3>
+                                        <p><a href="freshers.html">Read More</a></p>
+                                    </div>
+                                </div>                                
+                                <div class="slider-item">
+                                    <div class="slider-image">
+                                        <a href="freshers.html"><img src="{{=URL('static','final/wp-content/pictures/home/recent/zerohour.jpg')}}" alt="Zero Hour" /></a>    
+                                    </div><div class="clear"></div>
+                                    <div class="slider-title">
+                                        <h3><a href="zerohour.html">Zero Hour</a></h3>
+                                        <p><a href="zerohour.html">Read More</a></p>
+                                    </div>
+                                </div>                                
+				 <div class="slider-item">
+                                    <div class="slider-image">
+                                             <a href="http://www.cse.iitd.ernet.in/~acm/?page_id=1008"><img src="{{=URL('static','final/wp-content/pictures/home/recent/apc.jpg')}}" alt="Asian Programming Contest" /></a>    
+                                    </div><div class="clear"></div>
+                                    <div class="slider-title">
+                                        <h3><a href="http://www.cse.iitd.ernet.in/~acm/?page_id=1008">Asian Programming Contest</a></h3>
+                                        <p><a href="http://www.cse.iitd.ernet.in/~acm/?page_id=1008">Read More</a></p>
+                                    </div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="slider-image">
+                                            <a href="http://www.cse.iitd.ac.in/~aces/?tribe_events=compu-tennis-ball-cricket-tournament"><img src="{{=URL('static','final/wp-content/pictures/home/recent/cricket.jpg')}}" alt="Tennis Ball Cricket" /></a>    
+                                    </div><div class="clear"></div>
+                                    <div class="slider-title">
+                                        <h3><a href="http://www.cse.iitd.ac.in/~aces/?tribe_events=compu-tennis-ball-cricket-tournament">Tennis Ball Cricket</a></h3>
+                                        <p><a href="http://www.cse.iitd.ac.in/~aces/?tribe_events=compu-tennis-ball-cricket-tournament">Read More</a></p>
+                                    </div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="slider-image">
+                                            <a href="{{=URL('static','final/wp-content/pictures/home/dev_fest.jpg')}}" rel="prettyPhoto"><img src="{{=URL('static','final/wp-content/pictures/home/recent/dev_fest.jpg')}}" alt="DevFestX 2014" /></a>    
+                                    </div>
+                                    <div class="clear"></div>
+                                    <div class="slider-title">
+                                        <h3><a href="http://www.cse.iitd.ac.in/~aces/?tribe_events=devfestx-2014-2">DevFestX 2014</a></h3>
+                                        <p><a href="http://www.cse.iitd.ac.in/~aces/?tribe_events=devfestx-2014-2">Read More</a></p>
+                                    </div>
+                                </div>                                                                
+
+                                <div class="slider-item">
+                                    <div class="slider-image">
+                                           <a href="http://www.cse.iitd.ac.in/~aces/?tribe_events=treasure-hunt"><img src="{{=URL('static','final/wp-content/pictures/home/recent/treasure_hunt.jpg')}}" alt="Treasure Hunt" /></a>    
+                                    </div><div class="clear"></div>
+                                    <div class="slider-title">
+                                        <h3><a href="http://www.cse.iitd.ac.in/~aces/?tribe_events=treasure-hunt">Treasure Hunt</a></h3>
+                                        <p><a href="http://www.cse.iitd.ac.in/~aces/?tribe_events=treasure-hunt">Read More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sl-prev1" class="widget-scroll-prev"><i class="icon-chevron-left white"></i></div>
+                            <div id="sl-next1" class="widget-scroll-next"><i class="icon-chevron-right white but_marg"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+                    
+
+                    <script type="text/javascript">
+                        //<![CDATA[
+                        jQuery(document).ready(function ($) {
+                            $("#slider_home1").carouFredSel({
+                                width: "100%", height: "100%", responsive: true, circular: true, infinite: false, auto: false, items: { width: 231, visible: { min: 1, max: 3 } },
+                                swipe: { onTouch: true, onMouse: true },
+                                scroll: { items: 2, },
+                                prev: { button: "#sl-prev1", key: "left" },
+                                next: { button: "#sl-next1", key: "right" }
+                            });
+                        });
+                        //]]&gt;
+                    </script>
+
+<!--
+        <div class="inner_content" style="float:right">	
+        	<div class="row ">
+        		        <div class="span4">
+                            <h1>Upcoming Events</h1>
+                        </div>
+            </div>
+            <div class="row ">
+                <div class="span6">
+                    <div class="row">
+                        <div class="span6 pad15 col_full2">
+                            <div id="slider_home2">
+                                <div class="slider-item">
+                                    <div class="slider-image">
+                                        <div class="hover_colour"><a href="wp-content/uploads/2013/11/1.jpg" rel="prettyPhoto"><img src="wp-content/uploads/2013/11/1-300x225.jpg" alt="Youtube Video" /></a>
+                                        </div>
+                                    </div><div class="clear"></div>
+                                    <div class="slider-title">
+                                        <h3><a href="flati/index.html%3Fflatiportfolio=youtube-video-3.html">Youtube Video</a></h3>
+                                        <p>item description</p>
+                                    </div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="slider-image">
+                                        <div class="hover_colour"><a href="wp-content/uploads/2013/11/2.jpg" rel="prettyPhoto"><img src="wp-content/uploads/2013/11/2-300x225.jpg" alt="Vimeo Video" /></a></div>
+                                    </div><div class="clear"></div>
+                                    <div class="slider-title">
+                                        <h3><a href="flati/index.html%3Fflatiportfolio=vimeo-video-3.html">Vimeo Video</a></h3>
+                                        <p>item description</p>
+                                    </div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="slider-image">
+                                        <div class="hover_colour"><a href="wp-content/uploads/2013/11/7.jpg" rel="prettyPhoto"><img src="wp-content/uploads/2013/11/7-300x225.jpg" alt="Single Image" /></a></div>
+                                    </div><div class="clear"></div>
+                                    <div class="slider-title">
+                                        <h3><a href="flati/index.html%3Fflatiportfolio=single-image-3.html">Single Image</a></h3>
+                                        <p>item description</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sl-prev2" class="widget-scroll-prev"><i class="icon-chevron-left white"></i></div>
+                            <div id="sl-next2" class="widget-scroll-next"><i class="icon-chevron-right white but_marg"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+                        jQuery(document).ready(function ($) {
+                            $("#slider_home2").carouFredSel({
+                                width: "100%", height: "auto", responsive: true, circular: true, infinite: false, auto: false, items: { width: 231, visible: { min: 1, max: 3 } },
+                                swipe: { onTouch: true, onMouse: true },
+                                scroll: { items: 3, },
+                                prev: { button: "#sl-prev2", key: "left" },
+                                next: { button: "#sl-next2", key: "right" }
+                            });
+                        });
+                        //]]&gt;
+                    </script>
+-->
+
+    </div>
+
+
+    <!--div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="row">
+        	            <h1 class="center">Our Sponsors</h1>
+	                 <div class="span12 client" style="text-indent:0">
+                        <div class="pad20"></div>
+                        <span ><a href="{{=URL('contact')}}"><h1 class="title" style="text-align:center">Become A Sponsor</h1></a></span>
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+
+    </div-->
+
+
+    <script type='text/javascript' src="{{=URL('static','final/wp-content/themes/flati/js/jquery.carouFredSel-6.2.1-packed.js%3Fver=6.2.1')}}"></script>
+

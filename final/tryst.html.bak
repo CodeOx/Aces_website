@@ -1,0 +1,57 @@
+{{ extend 'final/layout.html' }}
+<div id="banner">
+    <div class="container intro_wrapper">
+        <div class="inner_content" style="padding:10px;">
+            <h1 class="title" style="text-align:center;margin-bottom:0;margin-top:30px">
+                Tryst, 2015
+            </h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="pad20"></div>
+    <h1>
+     Tryst 2015 is here! And we, the ACES-ACM, are back with loads of events as a part of the Tryst Tech Fest this season. Here's a list of the many offline and online events that we will be orgainising. 
+     </h1>
+     <div class="row">
+        <div class="span6">
+            <div class="inner_content">
+                <img class="alignright" title="Untitled" src="{{=URL('static','images/online.jpg')}}" alt="" width="70%" style="border:2px solid black" />
+            </div>
+        </div>
+        <div class="span3">        
+	    <div class="pad60"></div>	
+            <div class="pad60"></div>  
+            <h1 style="text-align: center;"><b>Online Events</b></h1>
+            <ul>
+                <li><h2 style="text-align: center;" ><a href = "http://www.facebook.com/events/723958977717028">Code Hunt</a></h2> </li>
+                <li><h2 style="text-align: center;">Sixth Sense</h2></li>
+                <li><h2 style="text-align: center;">Ultimate Tic-Tac_toe</h2></li>
+                <li><h2 style="text-align: center;">Logicape</h2></li>      
+            </ul>
+        </div>
+	<div class="span3"> </div>
+    </div>
+    <div class="row">
+	<div class="span3"> </div>
+        <div class="span3">        
+            <div class="pad60"></div>  
+            <div class="pad60"></div>  
+            <h1 style="text-align: center;"><b>Offline Events</b></h1>
+            <ul>
+                <li><h2 style="text-align: center;">Quiz Up</h2></li>
+                <li><h2 style="text-align: center;">BugSmash</h2></li>
+                <li><h2 style="text-align: center;">Algorythm</h2></li>  
+            </ul>
+        </div>        
+        <div class="span6">
+            <div class="inner_content">
+                <img class="alignleft" title="Untitled" src="{{=URL('static','images/offline.jpg')}}" alt="" width="70%" style="border:2px solid black" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="strip">
+    <div class="container">
+    </div>
+</div>
